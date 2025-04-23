@@ -86,7 +86,7 @@ section img {
     margin: 5% auto;
     width: 60%;
     height: 50%;
-    
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* フッターのスタイル */
