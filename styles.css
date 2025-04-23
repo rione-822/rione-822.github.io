@@ -82,9 +82,11 @@ section p {
 }
 
 section img {
-    display: block-inline;
-    text-align: center;
-    margin: 5%
+    display: block;
+    margin: 5% auto;
+    width: 60%;
+    height: 50%;
+    
 }
 
 /* フッターのスタイル */
