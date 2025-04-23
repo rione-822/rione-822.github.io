@@ -81,6 +81,12 @@ section p {
     margin: 0;
 }
 
+section img {
+    display: block-inline;
+    text-align: center;
+    margin: 5%
+}
+
 /* フッターのスタイル */
 footer {
     text-align: center;
