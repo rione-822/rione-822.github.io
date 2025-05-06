@@ -58,7 +58,7 @@ nav ul li a:hover {
 }
 
 /* サブメニューのスタイル */
-nav ul ul {
+nav ul li ul {
     display: none; /* 初期状態では非表示 */
     position: absolute;
     top: 100%; /* 親メニューの下に表示 */
@@ -72,11 +72,11 @@ nav ul ul {
     z-index: 1000;
 }
 
-nav ul ul li {
+nav ul li ul li {
     border-top: 1px solid #575757; /* サブメニューの区切り線 */
 }
 
-nav ul ul li a {
+nav ul li ul li a {
     padding: 0.8em 1em;
     color: white;
     text-decoration: none;
@@ -84,7 +84,7 @@ nav ul ul li a {
     transition: background-color 0.3s;
 }
 
-nav ul ul li a:hover {
+nav ul li ul li a:hover {
     background-color: #575757;
 }
 
