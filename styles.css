@@ -37,12 +37,13 @@ nav ul {
     margin: 0;
     padding: 0;
     display: block;
-    width: 100%
+    width: 100%;
 }
 
 nav ul li {
-    
+    float: left;
     margin: 0;
+    position: relative;
 }
 
 nav ul li a {
