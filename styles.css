@@ -36,8 +36,8 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: inline-block;
-    justify-content: center;
+    display: block;
+    width: 100%
 }
 
 nav ul li {
@@ -89,7 +89,7 @@ nav ul .submenu li a:hover {
 }
 
 /* ホバー時のサブメニュー表示とアニメーション */
-nav ul li a:hover .submenu {
+nav ul li:hover .submenu {
     display: block;
     animation: slideDown 0.3s ease-in-out; /* アニメーション適用 */
 }
