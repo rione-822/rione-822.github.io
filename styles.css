@@ -89,7 +89,7 @@ nav ul ul li a:hover {
 }
 
 /* ホバー時のサブメニュー表示とアニメーション */
-nav ul li:hover a { /* 修正 */
+nav ul li:hover .submenu { /* 修正 */
     display: block;
     animation: slideDown 0.3s ease-in-out forwards; /* アニメーション適用と完了状態維持 */
 }
