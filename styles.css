@@ -27,27 +27,23 @@ header p {
 
 /* ナビゲーションメニューのスタイル */
 nav {
-
-    background-color: #333;
-    
-
+    background-color: #333;
 }
 
 
 
 nav ul {
-
-    list-style: none;
+    list-style: none;
     margin: 0;
     padding: 0;
-    display: inline-block;
+    display: flex;
     justify-content: center;
 
 }
 
 nav ul li {
-    margin: 0;
     position: relative; /* サブメニューの位置調整用 */
+    margin: 0;
 }
 nav ul li a {
     display: block;
@@ -95,13 +91,13 @@ nav ul li ul li a:hover {
 /* ホバー時のサブメニュー表示とアニメーション */
 nav ul li:hover ul { /* 修正 */
     display: block;
-    animation: slideDown 0.3s ease-in-out forwards; /* アニメーション適用と完了状態維持 */
+    animation: slideDown 0.3s ease-in-out; /* アニメーション適用と完了状態維持 */
 }
 
 /* サブメニューのアニメーション */
 @keyframes slideDown {
     from {
-        transform: translateY(-10px); /* 少し上から */
+        transform: translateY(-10%); /* 少し上から */
         opacity: 0;
     }
     to {
