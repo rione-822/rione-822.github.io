@@ -3,7 +3,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f7f7f7;
+    background-color: #028760;
     color: #333;
 }
 
@@ -27,7 +27,7 @@ header p {
 
 /* ナビゲーションメニューのスタイル */
 nav {
-    background-color: #028760;
+    background-color: #333;
 }
 
 
@@ -119,6 +119,8 @@ main {
 
 /* セクションのスタイル */
 section {
+    display: inline-block;
+    position: relative;
     margin-bottom: 2em;
 }
 
@@ -134,11 +136,13 @@ section p {
 }
 
 section img {
+    positon: absolute;
     display: block;
     margin: 5% auto;
     width: 60%;
     height: 50%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    top: 100%;
 }
 
 /* フッターのスタイル */
