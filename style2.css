@@ -10,7 +10,7 @@ body {
 /* ヘッダーのスタイル */
 header {
     background-color: #c9171e;
-    color: #ffd900;
+    color: #fbfaf5;
     text-align: center;
     padding: 1.5em 0;
 }
@@ -109,7 +109,7 @@ nav ul li:hover ul { /* 修正 */
 /* メインコンテンツのスタイル */
 main {
     padding: 2em;
-    background-color: white;
+    background-color: #fbfaf5;
     max-width: 800px;
     margin: 2em auto;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
