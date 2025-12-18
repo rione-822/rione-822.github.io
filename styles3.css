@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* ヘッダーのスタイル */
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1.5em 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 0.5em 0 0;
+    font-size: 1.2em;
+}
+
+/* ナビゲーションメニューのスタイル */
+nav {
+    background-color: #333;
+}
+
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+nav>ul>li {
+    position: relative; /* サブメニューの位置調整用 */
+    margin: 0;
+}
+nav>ul>li>a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 1em 2em;
+    transition: background-color 0.3s;
+}
+
+nav>ul>li>a:hover {
+    background-color: #575757;
+}
+
+/* サブメニューのスタイル */
+nav ul li ul {
+    display: none; /* 初期状態では非表示 */
+    position: absolute;
+    top: 100%; /* 親メニューの下に表示 */
+    left: 0;
+    background-color: #333;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 200px; /* サブメニューの幅 */
+    overflow: hidden; /* アニメーション時の見切れ対策 */
+    z-index: 1000;
+}
+
+nav ul li ul li {
+    border-top: 1px solid #575757; /* サブメニューの区切り線 */
+}
+
+nav ul li ul li a {
+    padding: 0.8em 1em;
+    color: white;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+nav ul li ul li a:hover {
+    background-color: #575757;
+}
+
+/* ホバー時のサブメニュー表示とアニメーション */
+nav ul li:hover ul { /* 修正 */
+    display: block;
+    animation: slideDown 0.3s ease-in-out; /* アニメーション適用と完了状態維持 */
+}
+
+/* サブメニューのアニメーション */
+@keyframes slideDown {
+    from {
+        transform: translateY(-10%); /* 少し上から */
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* メインコンテンツのスタイル */
+main {
+    padding: 2em;
+    background-color: white;
+    max-width: 800px;
+    margin: 2em auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+   
+}
+
+/* セクションのスタイル */
+section {
+    margin-bottom: 2em;
+}
+
+section h2 {
+    color: #4CAF50;
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+}
+
+section p {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+section img {
+    display: block;
+    margin: 5% auto;
+    width: 60%;
+    height: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* フッターのスタイル */
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+    color: white;
+    margin-top: 2em;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}

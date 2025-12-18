@@ -3,57 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>わたしのポートフォリオ</title>
-    <link rel="stylesheet" href="style2.css">
+    <title>rinri's Portfolio - 大正浪漫</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>ようこそ！</h1>
-        <p>ここは私のホームページです</p>
+
+    <header class="site-header">
+        <div class="container">
+            <h1 class="site-title"><a href="index.html">rinri's Portfolio</a></h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#about">自己紹介</a></li>
+                    <li><a href="#works">制作物</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <nav>
-        <ul>
-            <li class="mainmenu">
-                <a href="#">自己紹介</a>
-                <ul class="submenu">
-                    <li><a href="#about">私について</a></li>
-                    <li><a href="#hobby">趣味</a></li>
-                    <li><a href="#like">好きなもの</a></li>
-                </ul>
-            </li>
-            
-            <li class="mainmenu">
-                <a href="#">ポートフォリオ</a>
-                <ul class="submenu">
-                    <li><a href="https://rione-822.github.io/3zemiGeminiPractice/">広告ブレイク！</a></li>
-                </ul>
-            </li>
-             <li><a href="#">連絡方法</a></li>
-            
-        </ul>
-    </nav>
+
     <main>
-        
-        <article>
-            <section id="about">
-                <h2>私について</h2>
-                <p>茶華道部に所属しています。プログラミング初心者です。</p>
-                <img src="mattya.jpg" alt="あわあわに点てたお抹茶" width=60% height=50%>
+        <section id="hero">
+            <div class="hero-content">
+                <h2 class="hero-title">だいたい、<br>AIで作ってる。</h2>
+                <p class="hero-subtitle">rinriの制作物一覧です。</p>
+            </div>
+        </section>
+
+        <div class="container">
+            <section id="about" class="content-section">
+                <h2 class="section-title">自己紹介</h2>
+                <p>
+                    はじめまして、rinriと申します。<br>
+                    プログラミングは初心者です。主に生成AIを用いた開発を行っています。<br>
+                    このサイトでは、これまでに制作したアプリケーションやウェブサイトを展示しています。どうぞごゆっくりご覧ください。
+                </p>
             </section>
-            <section id="hobby">
-                <h2>趣味</h2>
-                <p>よく散歩をしながら風景を見たり写真に撮ったりします。外で本読んだりも。</p>
+
+            <section id="works" class="content-section">
+                <h2 class="section-title">制作物</h2>
+                <div class="works-grid">
+                    <a href="https://rione-822.github.io/3zemiGeminiPractice/" class="work-item">
+                        <div class="work-image-wrapper">
+                            <img src="koukoku_brake.png" alt="制作物1の画像">
+                        </div>
+                        <div class="work-info">
+                            <h3>広告ブレイク！</h3>
+                            <p>広告を消すゲームです。Gemini CLIで作成しました。</p>
+                        </div>
+                    </a>
+                    <a href="portfolio1.html" class="work-item">
+                        <div class="work-image-wrapper">
+                            <img src="mattya.jpg" alt="制作物2の画像">
+                        </div>
+                        <div class="work-info">
+                            <h3>旧ポートフォリオサイト</h3>
+                            <p>初めて作ったサイトです。GitHub Copilotで作成しました。</p>
+                        </div>
+                    </a>
+                    <!-- 新しい制作物はここに追加 -->
+                     
+                </div>
             </section>
-            <section id="like">
-                <h2>好きなもの・人・こと</h2>
-                <p>ポケモンのクルマユ、コフーライ。にじさんじの
-                    <a href="https://www.nijisanji.jp/talents/l/mugi-ienaga" class="link-animation">家長むぎ</a>
-                    ちゃん。</p>
-            </section>
-        </article>        
+        </div>
     </main>
-    <footer>
-        <p>&copy; 2025 私のホームページ</p>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 rinri. All rights reserved.</p>
+        </div>
     </footer>
+
 </body>
 </html>
